@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <style>
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    align-items:center;
+    display:flex;
+    justify-content:space-between; 
+  }
+
+  .left {
+    width: 740px;
+    height: 428px;
+    background-color: lightblue;
+    margin-right: 8px;
+  }
+  .right{
+    width:332px;
+    height:428px;
+    background-color:antiquewhite;
+    overflow:hidden;
+  }
+  .gnb{
+    padding:8px 0;
+    margin:0;
+    display:flex;
+    background-color:tomato;
+  }
+  .gnb li{
+    list-style-type:none;
+    padding-left:16px;
+  }
+  .gnb li:first-child{
+    padding-left:0;
+  }
+  .rank{
+    padding:8px 0;
+    margin:0;
+    list-style-type:none;
+    background-color: yellowgreen;
+  }
+  .header{
+    padding:16px 0;
+    font-size: 24px;
+    text-align:center;
+  }
+  .footer{
+    height:80px;
+    background-color:palevioletred;
+    text-align:center;
+    line-height:80px;
+    font-size:16px;
+    color:silver;
+  }
+    </style>
+</head>
+<body>
+    <div class="container header">
+        <h1>logo</h1>
+    </div>
+    <div class="container">
+            <ul class="gnb">
+                <li>메일</li>
+                <li>카페</li>
+                <li>블로그</li>
+                <li>쇼핑</li>
+                <li>사전</li>
+                <li>뉴스</li>
+                <li>증권</li>
+                <li>부동산</li>
+                <li>지도</li>
+              </ul>
+            <ul class="rank">
+                <li>실시간 검색 순위</li>
+              </ul>
+        </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container footer">
+        <div>footer</div>
+    </div>
+</body>
+</html>
