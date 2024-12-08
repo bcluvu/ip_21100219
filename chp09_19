@@ -1,0 +1,25 @@
+let year = prompt("태어난 연도를 입력해주세요");
+
+if (year && !isNaN(year)) {
+  let zodiac = [
+    "원숭이띠",
+    "닭띠",
+    "개띠",
+    "돼지띠",
+    "쥐띠",
+    "소띠",
+    "범띠",
+    "토끼띠",
+    "용띠",
+    "뱀띠",
+    "말띠",
+    "양띠"
+  ];
+
+   let remainder = year % 12;
+  let result = zodiac[remainder];
+
+  alert(`${year}년은 ${result}입니다.`);
+} else {
+  alert("유효한 연도를 입력해주세요!");
+}
