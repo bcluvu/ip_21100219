@@ -1,0 +1,16 @@
+const book = {
+    name: "C# 프로그래밍(2판)",
+    firstEdition: "2021년 1월 5일",
+    author: "윤인성",
+    publisher: {
+      name: "전태호",
+      location: "한빛아카데미(주)"
+    },
+    responsibility: {
+      editorInCharge: "김성무",
+      planning: "김성무",
+      editing: "정서린",
+      design: ["최연희", "이아란"]
+    }
+  };
+  
