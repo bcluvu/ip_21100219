@@ -1,0 +1,18 @@
+function Volume(radius, height) {
+    const pi = Math.PI; 
+    const baseArea = pi * radius * radius; 
+    const volume = baseArea * height; 
+    return volume.toFixed(2); 
+  }
+  
+  let radiusInput = prompt("원기둥 밑면의 반지름을 입력하세요 (cm):");
+  let heightInput = prompt("원기둥의 높이를 입력하세요 (cm):");
+  
+  if (!isNaN(radiusInput) && !isNaN(heightInput) && radiusInput > 0 && heightInput > 0) {
+    let radius = parseFloat(radiusInput);
+    let height = parseFloat(heightInput);
+    let volume = Volume(radius, height);
+    alert(`밑면 반지름: ${radius}cm, 높이: ${height}cm인 원기둥의 부피는 ${volume}cm³입니다.`);
+  } else {
+    alert("유효한 양수를 입력하세요!");
+  }
