@@ -1,0 +1,20 @@
+function ctoif(cm) {
+    const cmPerInch = 2.54; 
+    const inchesPerFoot = 12; 
+  
+    let totalInches = cm / cmPerInch;
+  
+    let feet = Math.floor(totalInches / inchesPerFoot);
+    let inches = (totalInches % inchesPerFoot).toFixed(2);
+  
+    return `${cm} cm는 ${feet} 피트 ${inches} 인치입니다.`;
+  }
+  
+  let cmInput = prompt("센티미터(cm)를 입력하세요:");
+  if (cmInput && !isNaN(cmInput)) {
+    let result = ctoif(parseFloat(cmInput));
+    alert(result);
+  } else {
+    alert("유효한 숫자를 입력하세요!");
+  }
+  
